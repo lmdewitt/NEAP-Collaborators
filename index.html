@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NOAA Fisheries - Southwest Fisheries Science Center - Ecosystem Science Division</title>
+<title>NOAA National Ecosystem Assessment Program</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -35,6 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./all_categories.html" rel="next">
 <link href="./images/favicon.ico" rel="icon">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
@@ -82,34 +83,6 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-bygrid .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-bygrid'] = new List('listing-bygrid', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-bytable .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -117,41 +90,13 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-contact','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-Name','listing-Organization','listing-email','listing-Region','listing-categories','listing-Skills','listing-Products',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-Name","listing-Organization","listing-email","listing-Products","listing-Skills","listing-categories","listing-Region"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-bytable'] = new List('listing-bytable', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-byblog .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-contact','listing-description','listing-categories','listing-filename','listing-file-modified',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-byblog'] = new List('listing-byblog', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -368,11 +313,11 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logos/ESD_meatball.png" alt="" class="navbar-logo light-content">
-    <img src="./images/logos/ESD_meatball.png" alt="" class="navbar-logo dark-content">
+    <img src="./images/logos/noaa_logo.png" alt="" class="navbar-logo light-content">
+    <img src="./images/logos/noaa_logo.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Ecosystem Science Division Data Inventory</span>
+    <span class="navbar-title">NEAP Collaborators</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -396,7 +341,7 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/lmdewitt/ESD-data" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://github.com/lmdewitt/NEAP-Collaborators" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -406,7 +351,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">NOAA Fisheries - Southwest Fisheries Science Center - Ecosystem Science Division</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Collaborators Tags Tests</a></li><li class="breadcrumb-item"><a href="./index.html">By Topical Expertise</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -419,12 +364,12 @@ window.Quarto = {
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
- <span class="menu-text"><b>Quick Links</b></span>
+ <span class="menu-text"><b>NEAP Links</b></span>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">InPort Links</span></a>
+ <span class="menu-text">Collaborators Tags Tests</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -432,14 +377,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://www.fisheries.noaa.gov/inport/item/10759" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AMLR</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">By Topical Expertise</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://www.fisheries.noaa.gov/inport/q?keywords=CalCOFI%7EFRD&amp;orgId=1060&amp;itemTypeAll=on" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CalCOFI</span></a>
+  <a href="./all_categories.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">All Tags</span></a>
   </div>
 </li>
       </ul>
@@ -447,7 +392,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">ERDDAP links</span></a>
+ <span class="menu-text">General NEAP links</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -455,14 +400,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://oceanview.pfeg.noaa.gov/erddap/search/advanced.html?searchFor=erdCalCOFI" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CalCOFI</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://oceanview.pfeg.noaa.gov/erddap/tabledap/esd_amlr_visual_zooplankton.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shadowgraph</span></a>
+  <a href="https://www.integratedecosystemassessment.noaa.gov/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IEA</span></a>
   </div>
 </li>
       </ul>
@@ -470,15 +409,47 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Repositories</span></a>
+ <span class="menu-text">NEAP/IEA Data Group Web pages</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
- <span class="menu-text">Some GitHub links</span>
+  <div class="sidebar-item-container"> 
+  <a href="https://iea-data.github.io/IEA_Data_Guidance_Doc/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NEAP/IEA Guidance Doc</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://github.com/IEA-Data/Discussion_Board/discussions" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IEA-Data Discussion Board</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://docs.google.com/document/d/1XBplEGRCfYjrGG4Ch3V_8l4xiJ7C1eFB03vimfslNS8/edit?tab=t.0#heading=h.lel32f7gy7db" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY25-28 IEA Data Working Group Strategic Plan</span></a>
+  </div>
+</li>
+      </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Repositories</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="http://www.github.com/IEA-Data" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NEAP/IEA Data Working Group</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -488,15 +459,15 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="YWN0aXZl">active</div><div class="category" data-category="QU1MUg==">AMLR</div><div class="category" data-category="QyUyNkU=">C&amp;E</div><div class="category" data-category="Q2FsQ09GSQ==">CalCOFI</div><div class="category" data-category="Z2xpZGVycw==">gliders</div><div class="category" data-category="bW9vcmluZ3M=">moorings</div><div class="category" data-category="U09T">SOS</div><div class="category" data-category="c3RhdGlj">static</div></div></div>
+    <h5 class="quarto-listing-category-title">Topical Expertise</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="Q29tbXVuaWNhdGlvbg==">Communication</div><div class="category" data-category="Q29uc3RydWN0aW9u">Construction</div><div class="category" data-category="Q29va2luZw==">Cooking</div><div class="category" data-category="R2FyZGVuaW5n">Gardening</div><div class="category" data-category="SG9tZSUyMENyYWZ0aW5n">Home Crafting</div><div class="category" data-category="UGV0cw==">Pets</div><div class="category" data-category="U2V3aW5n">Sewing</div></div></div>
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Collaborators Tags Tests</a></li><li class="breadcrumb-item"><a href="./index.html">By Topical Expertise</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">NOAA Fisheries - Southwest Fisheries Science Center - Ecosystem Science Division</h1>
-<p class="subtitle lead">Data Inventory</p>
+<h1 class="title">NOAA National Ecosystem Assessment Program</h1>
+<p class="subtitle lead">NEAP Collaborators by Topical Expertise</p>
 </div>
 
 
@@ -514,425 +485,9 @@ window.Quarto = {
 
 
 <div class="tabset-margin-container"></div><div id="data-tabset" class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Grid</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Table</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">List</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Table</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">List</a></li></ul>
 <div id="data-tabset" class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div id="listing-bygrid" class="quarto-listing quarto-listing-container-grid">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-5">
-<div class="g-col-1" data-index="0" data-categories="U09TJTJDYWN0aXZlJTJDZ2xpZGVycw==" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
-<a href="./sos/acoustic_glider.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./sos/images/acoustic_glider.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Active Acoustic Glider
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2xpZGVycw=='); return false;">gliders</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Placeholder for Active Acoustic Glider Data description</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="U09TJTJDYWN0aXZlJTJDbW9vcmluZ3M=" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-<a href="./sos/acoustic_mooring.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./sos/images/acoustic_mooring.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Active Acoustic Mooring
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9vcmluZ3M='); return false;">moorings</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Mooring data - active acoustics</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053375" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
-<a href="./amlr/cruise.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/cruise.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Antarctic Cruise Data
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGlj'); return false;">static</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Placeholder for cruise data description</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053375" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
-<a href="./amlr/bio-logger.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/pinniped.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bio-logger
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Deployment of light-based geolocators (GLS) on seabird and pinnipeds</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="Q2FsQ09GSSUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053386" data-listing-reading-time-sort="1" data-listing-word-count-sort="52">
-<a href="./calcofi/calcofi_databases.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./calcofi/images/calcofi.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-CalCOFI
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FsQ09GSQ=='); return false;">CalCOFI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>California Cooperative Oceanic Fisheries Investigations</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="U09TJTJDYWN0aXZlJTJDZ2xpZGVycw==" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
-<a href="./sos/env_glider.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./sos/images/env_glider.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Environmental Glider
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2xpZGVycw=='); return false;">gliders</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Placeholder for Environmental Glider Data description</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="U09TJTJDYWN0aXZlJTJDbW9vcmluZ3M=" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
-<a href="./sos/env_mooring.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./sos/images/env_mooring.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Environmental Mooring
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9vcmluZ3M='); return false;">moorings</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Mooring data - environmental</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053375" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
-<a href="./amlr/finfish.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/bottom_trawl.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Finfish trawl surveys
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Scientific advice for the management of Antarctic finfish in the Southern Ocean</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="QU1MUiUyQ0MlMjZFJTJDYWN0aXZl" data-listing-file-modified-sort="1790618053387" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
-<a href="./gcp/gcp.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./gcp/images/gcp.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-GCP
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QyUyNkU='); return false;">C&amp;E</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Google Cloud Platform projects</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
-<a href="./amlr/krill.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/krill.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Krill Models
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGlj'); return false;">static</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Placeholder for lipid analysis database description</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<a href="./amlr/lipid.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/lipid.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Lipid analysis database
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGlj'); return false;">static</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Placeholder for lipid analysis database description</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="U09TJTJDYWN0aXZlJTJDZ2xpZGVycw==" data-listing-file-modified-sort="1790618053404" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
-<a href="./sos/optic_glider.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./sos/images/shadowgraph.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Optical Glider Data
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2xpZGVycw=='); return false;">gliders</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Shadowgraph images</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="12" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
-<a href="./amlr/pinniped.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/seals.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Pinniped land-based studies
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Population health of Antarctic fur seals in relation to the availability of Antarctic krill.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="13" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
-<a href="./amlr/seabird.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/seabird.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Seabird land-based studies
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Study of three species of penguins (Adélie, chinstrap, and gentoo penguins) and several species of flying seabirds, including skuas and giant petrels.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="14" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<a href="./amlr/seafloor_imagery.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/seafloor_imagery.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Seafloor imagery
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGlj'); return false;">static</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Placeholder for seafloor imagery description</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="15" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
-<a href="./amlr/uas.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/uas.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Uncrewed Aerial Systems (UAS) imagery
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Placeholder for UAS description</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="16" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<a href="./amlr/video.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./amlr/images/video.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Video logger imagery
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Underwater imagery</p>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div id="listing-bytable" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
@@ -940,14 +495,14 @@ Video logger imagery
     <select id="listing-bytable-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-bytable'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
+      <option value="listing-Name" data-direction="asc">
+        Name
       </option>
-      <option value="listing-categories" data-direction="asc">
-        Categories
+      <option value="listing-Organization" data-direction="asc">
+        Organization
       </option>
-      <option value="listing-contact" data-direction="asc">
-        Contact
+      <option value="listing-Region" data-direction="asc">
+        Neap Region
       </option>
     </select>
   </div>
@@ -961,365 +516,319 @@ Video logger imagery
 <tr>
 
 <th>
- 
+<a class="sort" data-sort="listing-Name" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Name</a>
 </th>
 
 <th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+<a class="sort" data-sort="listing-Organization" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Organization</a>
 </th>
 
 <th>
-<a class="sort" data-sort="listing-contact" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Contact</a>
+email
 </th>
 
 <th>
-Description
+<a class="sort" data-sort="listing-Region" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Neap Region</a>
 </th>
 
 <th>
-<a class="sort" data-sort="listing-categories" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Categories</a>
+Topical Expertise
+</th>
+
+<th>
+Technical Skills
+</th>
+
+<th>
+Products Worked On
 </th>
 
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="QU1MUiUyQ0MlMjZFJTJDYWN0aXZl" data-listing-file-modified-sort="1790618053387" data-listing-reading-time-sort="1" data-listing-word-count-sort="77" data-listing-title-sort="GCP" data-listing-filename-sort="gcp.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-categories="Q29tbXVuaWNhdGlvbg==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./gcp/images/gcp.png" style="height: 40px;"></span>
+<span class="listing-Name">Corinne Burns</span>
 </td>
 <td>
-<a href="./gcp/gcp.html" class="title listing-title">GCP</a>
+<span class="listing-Organization">NMFS/OST</span>
 </td>
 <td>
-<span class="listing-contact">Sam, Lynn</span>
+<span class="listing-email">corinne.burns@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Google Cloud Platform projects</span>
+<span class="listing-Region">&nbsp;</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, C&amp;E, active</span>
+<span class="listing-categories">Communication</span>
+</td>
+<td>
+<span class="listing-Skills">hearding cats</span>
+</td>
+<td>
+<span class="listing-Products">newsletters</span>
 </td>
 
 </tr>
 
-<tr data-index="1" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053375" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-listing-title-sort="Bio-logger" data-listing-filename-sort="bio-logger.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-categories="Q29va2luZw==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/pinniped.png" style="height: 40px;"></span>
+<span class="listing-Name">Will Klajbor</span>
 </td>
 <td>
-<a href="./amlr/bio-logger.html" class="title listing-title">Bio-logger</a>
+<span class="listing-Organization">OAR/AOML</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">willem.klajbor@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Deployment of light-based geolocators (GLS) on seabird and pinnipeds</span>
+<span class="listing-Region">Gulf of Mexico</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, active</span>
+<span class="listing-categories">Cooking</span>
+</td>
+<td>
+<span class="listing-Skills">dehydrating</span>
+</td>
+<td>
+<span class="listing-Products">jerkey, dried fruit</span>
 </td>
 
 </tr>
 
-<tr data-index="2" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053375" data-listing-reading-time-sort="1" data-listing-word-count-sort="14" data-listing-title-sort="Finfish trawl surveys" data-listing-filename-sort="finfish.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="2" data-categories="Q29va2luZw==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/bottom_trawl.jpg" style="height: 40px;"></span>
+<span class="listing-Name">Brittany Troast</span>
 </td>
 <td>
-<a href="./amlr/finfish.html" class="title listing-title">Finfish trawl surveys</a>
+<span class="listing-Organization">OAR/AOML</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">brittany.troast@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Scientific advice for the management of Antarctic finfish in the Southern Ocean</span>
+<span class="listing-Region">Gulf of Mexico</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, active</span>
+<span class="listing-categories">Cooking</span>
+</td>
+<td>
+<span class="listing-Skills">baking</span>
+</td>
+<td>
+<span class="listing-Products">cheesecake, bread</span>
 </td>
 
 </tr>
 
-<tr data-index="3" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="49" data-listing-title-sort="Pinniped land-based studies" data-listing-filename-sort="pinniped.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="3" data-categories="Q29va2luZw==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/seals.jpg" style="height: 40px;"></span>
+<span class="listing-Name">Ryan Rykaczewski</span>
 </td>
 <td>
-<a href="./amlr/pinniped.html" class="title listing-title">Pinniped land-based studies</a>
+<span class="listing-Organization">NMFS/SWFSC</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">ryan.rykaczewski@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Population health of Antarctic fur seals in relation to the availability of Antarctic krill.</span>
+<span class="listing-Region">California Current</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, active</span>
+<span class="listing-categories">Cooking</span>
+</td>
+<td>
+<span class="listing-Skills">preserving food, jam-making</span>
+</td>
+<td>
+<span class="listing-Products">snap peas, strawberries,jam</span>
 </td>
 
 </tr>
 
-<tr data-index="4" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="29" data-listing-title-sort="Seabird land-based studies" data-listing-filename-sort="seabird.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="4" data-categories="Q29va2luZyUyQ0dhcmRlbmluZw==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/seabird.jpg" style="height: 40px;"></span>
+<span class="listing-Name">Lynn deWitt</span>
 </td>
 <td>
-<a href="./amlr/seabird.html" class="title listing-title">Seabird land-based studies</a>
+<span class="listing-Organization">NMFS/SWFSC</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">lynn.dewitt@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Study of three species of penguins (Adélie, chinstrap, and gentoo penguins) and several species of flying seabirds, including skuas and giant petrels.</span>
+<span class="listing-Region">California Current</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, active</span>
+<span class="listing-categories">Cooking, Gardening</span>
+</td>
+<td>
+<span class="listing-Skills">baking, dehydrating</span>
+</td>
+<td>
+<span class="listing-Products">apple pie, cheesecake</span>
 </td>
 
 </tr>
 
-<tr data-index="5" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="Uncrewed Aerial Systems (UAS) imagery" data-listing-filename-sort="uas.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="5" data-categories="R2FyZGVuaW5n" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/uas.png" style="height: 40px;"></span>
+<span class="listing-Name">Brendan Turley</span>
 </td>
 <td>
-<a href="./amlr/uas.html" class="title listing-title">Uncrewed Aerial Systems (UAS) imagery</a>
+<span class="listing-Organization">NMFS/SEFSC</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">brendan.turley@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Placeholder for UAS description</span>
+<span class="listing-Region">Gulf of Mexico</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, active</span>
+<span class="listing-categories">Gardening</span>
+</td>
+<td>
+<span class="listing-Skills">planting, sprouting seeds, harvesting</span>
+</td>
+<td>
+<span class="listing-Products">lettuce, carrots, strawberries</span>
 </td>
 
 </tr>
 
-<tr data-index="6" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="23" data-listing-title-sort="Video logger imagery" data-listing-filename-sort="video.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="6" data-categories="SG9tZSUyMENyYWZ0aW5n" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/video.png" style="height: 40px;"></span>
+<span class="listing-Name">Kimberly Hyde</span>
 </td>
 <td>
-<a href="./amlr/video.html" class="title listing-title">Video logger imagery</a>
+<span class="listing-Organization">NMFS/NEFSC</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">kimberly.hyde@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Underwater imagery</span>
+<span class="listing-Region">Northeast</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, active</span>
+<span class="listing-categories">Home Crafting</span>
+</td>
+<td>
+<span class="listing-Skills">wax molding, fragrance blending</span>
+</td>
+<td>
+<span class="listing-Products">candles</span>
 </td>
 
 </tr>
 
-<tr data-index="7" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053375" data-listing-reading-time-sort="1" data-listing-word-count-sort="36" data-listing-title-sort="Antarctic Cruise Data" data-listing-filename-sort="cruise.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="7" data-categories="UGV0cw==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/cruise.jpg" style="height: 40px;"></span>
+<span class="listing-Name">Ryan Vandermeulen</span>
 </td>
 <td>
-<a href="./amlr/cruise.html" class="title listing-title">Antarctic Cruise Data</a>
+<span class="listing-Organization">NMFS/OST</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">ryan.vandermeulen@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Placeholder for cruise data description</span>
+<span class="listing-Region">&nbsp;</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, static</span>
+<span class="listing-categories">Pets</span>
+</td>
+<td>
+<span class="listing-Skills">dog whisperer</span>
+</td>
+<td>
+<span class="listing-Products">dog-walking service</span>
 </td>
 
 </tr>
 
-<tr data-index="8" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="31" data-listing-title-sort="Krill Models" data-listing-filename-sort="krill.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="8" data-categories="UGV0cyUyQ0NvbnN0cnVjdGlvbg==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/krill.jpg" style="height: 40px;"></span>
+<span class="listing-Name">Greg Williams</span>
 </td>
 <td>
-<a href="./amlr/krill.html" class="title listing-title">Krill Models</a>
+<span class="listing-Organization">NMFS/NWFSC</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">greg.williams@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Placeholder for lipid analysis database description</span>
+<span class="listing-Region">California Current</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, static</span>
+<span class="listing-categories">Pets, Construction</span>
+</td>
+<td>
+<span class="listing-Skills">design small building, painting, power tools</span>
+</td>
+<td>
+<span class="listing-Products">dog houses, play houses</span>
 </td>
 
 </tr>
 
-<tr data-index="9" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="23" data-listing-title-sort="Lipid analysis database" data-listing-filename-sort="lipid.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="9" data-categories="UGV0cyUyQ0Nvb2tpbmc=" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/lipid.png" style="height: 40px;"></span>
+<span class="listing-Name">Amy Freitag</span>
 </td>
 <td>
-<a href="./amlr/lipid.html" class="title listing-title">Lipid analysis database</a>
+<span class="listing-Organization">NOS/NCCOS</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">amy.freitag@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Placeholder for lipid analysis database description</span>
+<span class="listing-Region">&nbsp;</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, static</span>
+<span class="listing-categories">Pets, Cooking</span>
+</td>
+<td>
+<span class="listing-Skills">baking, sprouting seeds</span>
+</td>
+<td>
+<span class="listing-Products">homemade dog biscuits</span>
 </td>
 
 </tr>
 
-<tr data-index="10" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Seafloor imagery" data-listing-filename-sort="seafloor_imagery.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="10" data-categories="U2V3aW5nJTJDUGV0cyUyQ0hvbWUlMjBDcmFmdGluZw==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-image"><img loading="lazy" src="./amlr/images/seafloor_imagery.png" style="height: 40px;"></span>
+<span class="listing-Name">Carissa Gervasi</span>
 </td>
 <td>
-<a href="./amlr/seafloor_imagery.html" class="title listing-title">Seafloor imagery</a>
+<span class="listing-Organization">NMFS/SEFSC</span>
 </td>
 <td>
-<span class="listing-contact">Sam</span>
+<span class="listing-email">carissa.gervasi@noaa.gov</span>
 </td>
 <td>
-<span class="listing-description">Placeholder for seafloor imagery description</span>
+<span class="listing-Region">Gulf of Mexico</span>
 </td>
 <td>
-<span class="listing-categories">AMLR, static</span>
-</td>
-
-</tr>
-
-<tr data-index="11" data-categories="Q2FsQ09GSSUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053386" data-listing-reading-time-sort="1" data-listing-word-count-sort="52" data-listing-title-sort="CalCOFI" data-listing-filename-sort="calcofi_databases.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-image"><img loading="lazy" src="./calcofi/images/calcofi.png" style="height: 40px;"></span>
+<span class="listing-categories">Sewing, Pets, Home Crafting</span>
 </td>
 <td>
-<a href="./calcofi/calcofi_databases.html" class="title listing-title">CalCOFI</a>
+<span class="listing-Skills">machine sewing</span>
 </td>
 <td>
-<span class="listing-contact">Ed</span>
-</td>
-<td>
-<span class="listing-description">California Cooperative Oceanic Fisheries Investigations</span>
-</td>
-<td>
-<span class="listing-categories">CalCOFI, active</span>
-</td>
-
-</tr>
-
-<tr data-index="12" data-categories="U09TJTJDYWN0aXZlJTJDZ2xpZGVycw==" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="15" data-listing-title-sort="Active Acoustic Glider" data-listing-filename-sort="acoustic_glider.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-image"><img loading="lazy" src="./sos/images/acoustic_glider.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="./sos/acoustic_glider.html" class="title listing-title">Active Acoustic Glider</a>
-</td>
-<td>
-<span class="listing-contact">Kourtney</span>
-</td>
-<td>
-<span class="listing-description">Placeholder for Active Acoustic Glider Data description</span>
-</td>
-<td>
-<span class="listing-categories">SOS, active, gliders</span>
-</td>
-
-</tr>
-
-<tr data-index="13" data-categories="U09TJTJDYWN0aXZlJTJDZ2xpZGVycw==" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="54" data-listing-title-sort="Environmental Glider" data-listing-filename-sort="env_glider.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-image"><img loading="lazy" src="./sos/images/env_glider.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="./sos/env_glider.html" class="title listing-title">Environmental Glider</a>
-</td>
-<td>
-<span class="listing-contact">Kourtney</span>
-</td>
-<td>
-<span class="listing-description">Placeholder for Environmental Glider Data description</span>
-</td>
-<td>
-<span class="listing-categories">SOS, active, gliders</span>
-</td>
-
-</tr>
-
-<tr data-index="14" data-categories="U09TJTJDYWN0aXZlJTJDZ2xpZGVycw==" data-listing-file-modified-sort="1790618053404" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-listing-title-sort="Optical Glider Data" data-listing-filename-sort="optic_glider.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-image"><img loading="lazy" src="./sos/images/shadowgraph.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="./sos/optic_glider.html" class="title listing-title">Optical Glider Data</a>
-</td>
-<td>
-<span class="listing-contact">Kourtney</span>
-</td>
-<td>
-<span class="listing-description">Shadowgraph images</span>
-</td>
-<td>
-<span class="listing-categories">SOS, active, gliders</span>
-</td>
-
-</tr>
-
-<tr data-index="15" data-categories="U09TJTJDYWN0aXZlJTJDbW9vcmluZ3M=" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="18" data-listing-title-sort="Active Acoustic Mooring" data-listing-filename-sort="acoustic_mooring.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-image"><img loading="lazy" src="./sos/images/acoustic_mooring.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="./sos/acoustic_mooring.html" class="title listing-title">Active Acoustic Mooring</a>
-</td>
-<td>
-<span class="listing-contact">Kourtney</span>
-</td>
-<td>
-<span class="listing-description">Mooring data - active acoustics</span>
-</td>
-<td>
-<span class="listing-categories">SOS, active, moorings</span>
-</td>
-
-</tr>
-
-<tr data-index="16" data-categories="U09TJTJDYWN0aXZlJTJDbW9vcmluZ3M=" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="15" data-listing-title-sort="Environmental Mooring" data-listing-filename-sort="env_mooring.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-image"><img loading="lazy" src="./sos/images/env_mooring.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="./sos/env_mooring.html" class="title listing-title">Environmental Mooring</a>
-</td>
-<td>
-<span class="listing-contact">Kourtney</span>
-</td>
-<td>
-<span class="listing-description">Mooring data - environmental</span>
-</td>
-<td>
-<span class="listing-categories">SOS, active, moorings</span>
+<span class="listing-Products">pet blankets, cat toys</span>
 </td>
 
 </tr>
@@ -1329,676 +838,8 @@ Description
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<div id="listing-byblog" class="quarto-listing quarto-listing-container-default">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-byblog-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-byblog'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-categories" data-direction="asc">
-        Categories
-      </option>
-      <option value="listing-contact" data-direction="asc">
-        Contact
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QU1MUiUyQ0MlMjZFJTJDYWN0aXZl" data-listing-file-modified-sort="1790618053387" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
-<div class="thumbnail"><a href="./gcp/gcp.html" class="no-external">
-
-<img loading="lazy" src="./gcp/images/gcp.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./gcp/gcp.html" class="no-external">GCP</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QyUyNkU='); return false;">C&amp;E</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="delink listing-description"><a href="./gcp/gcp.html" class="no-external">
-<p>Google Cloud Platform projects</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./gcp/gcp.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam,Lynn
-</div>
-<div class="metadata-value listing-filename">
-gcp.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053375" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
-<div class="thumbnail"><a href="./amlr/bio-logger.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/pinniped.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/bio-logger.html" class="no-external">Bio-logger</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/bio-logger.html" class="no-external">
-<p>Deployment of light-based geolocators (GLS) on seabird and pinnipeds</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/bio-logger.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-bio-logger.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053375" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
-<div class="thumbnail"><a href="./amlr/finfish.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/bottom_trawl.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/finfish.html" class="no-external">Finfish trawl surveys</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/finfish.html" class="no-external">
-<p>Scientific advice for the management of Antarctic finfish in the Southern Ocean</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/finfish.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-finfish.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
-<div class="thumbnail"><a href="./amlr/pinniped.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/seals.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/pinniped.html" class="no-external">Pinniped land-based studies</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/pinniped.html" class="no-external">
-<p>Population health of Antarctic fur seals in relation to the availability of Antarctic krill.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/pinniped.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-pinniped.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
-<div class="thumbnail"><a href="./amlr/seabird.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/seabird.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/seabird.html" class="no-external">Seabird land-based studies</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/seabird.html" class="no-external">
-<p>Study of three species of penguins (Adélie, chinstrap, and gentoo penguins) and several species of flying seabirds, including skuas and giant petrels.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/seabird.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-seabird.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
-<div class="thumbnail"><a href="./amlr/uas.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/uas.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/uas.html" class="no-external">Uncrewed Aerial Systems (UAS) imagery</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/uas.html" class="no-external">
-<p>Placeholder for UAS description</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/uas.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-uas.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="QU1MUiUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<div class="thumbnail"><a href="./amlr/video.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/video.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/video.html" class="no-external">Video logger imagery</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/video.html" class="no-external">
-<p>Underwater imagery</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/video.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-video.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053375" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
-<div class="thumbnail"><a href="./amlr/cruise.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/cruise.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/cruise.html" class="no-external">Antarctic Cruise Data</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGlj'); return false;">static</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/cruise.html" class="no-external">
-<p>Placeholder for cruise data description</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/cruise.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-cruise.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
-<div class="thumbnail"><a href="./amlr/krill.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/krill.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/krill.html" class="no-external">Krill Models</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGlj'); return false;">static</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/krill.html" class="no-external">
-<p>Placeholder for lipid analysis database description</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/krill.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-krill.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<div class="thumbnail"><a href="./amlr/lipid.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/lipid.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/lipid.html" class="no-external">Lipid analysis database</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGlj'); return false;">static</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/lipid.html" class="no-external">
-<p>Placeholder for lipid analysis database description</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/lipid.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-lipid.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="QU1MUiUyQ3N0YXRpYw==" data-listing-file-modified-sort="1790618053385" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<div class="thumbnail"><a href="./amlr/seafloor_imagery.html" class="no-external">
-
-<img loading="lazy" src="./amlr/images/seafloor_imagery.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./amlr/seafloor_imagery.html" class="no-external">Seafloor imagery</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QU1MUg=='); return false;">AMLR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGlj'); return false;">static</div>
-
-</div>
-<div class="delink listing-description"><a href="./amlr/seafloor_imagery.html" class="no-external">
-<p>Placeholder for seafloor imagery description</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./amlr/seafloor_imagery.html" class="no-external">
-<div class="metadata-value listing-contact">
-Sam
-</div>
-<div class="metadata-value listing-filename">
-seafloor_imagery.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-categories="Q2FsQ09GSSUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053386" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail"><a href="./calcofi/calcofi.html" class="no-external">
-
-<img loading="lazy" src="./calcofi/images/calcofi.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./calcofi/calcofi.html" class="no-external">CalCOFI</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FsQ09GSQ=='); return false;">CalCOFI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="delink listing-description"><a href="./calcofi/calcofi.html" class="no-external">
-<p>California Cooperative Oceanic Fisheries Investigations</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./calcofi/calcofi.html" class="no-external">
-<div class="metadata-value listing-contact">
-Ed
-</div>
-<div class="metadata-value listing-filename">
-calcofi.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-categories="Q2FsQ09GSSUyQ2FjdGl2ZQ==" data-listing-file-modified-sort="1790618053386" data-listing-reading-time-sort="1" data-listing-word-count-sort="52">
-<div class="thumbnail"><a href="./calcofi/calcofi_databases.html" class="no-external">
-
-<img loading="lazy" src="./calcofi/images/calcofi.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./calcofi/calcofi_databases.html" class="no-external">CalCOFI</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FsQ09GSQ=='); return false;">CalCOFI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-</div>
-<div class="delink listing-description"><a href="./calcofi/calcofi_databases.html" class="no-external">
-<p>California Cooperative Oceanic Fisheries Investigations</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./calcofi/calcofi_databases.html" class="no-external">
-<div class="metadata-value listing-contact">
-Ed
-</div>
-<div class="metadata-value listing-filename">
-calcofi_databases.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-categories="U09TJTJDYWN0aXZlJTJDZ2xpZGVycw==" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
-<div class="thumbnail"><a href="./sos/acoustic_glider.html" class="no-external">
-
-<img loading="lazy" src="./sos/images/acoustic_glider.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sos/acoustic_glider.html" class="no-external">Active Acoustic Glider</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2xpZGVycw=='); return false;">gliders</div>
-
-</div>
-<div class="delink listing-description"><a href="./sos/acoustic_glider.html" class="no-external">
-<p>Placeholder for Active Acoustic Glider Data description</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./sos/acoustic_glider.html" class="no-external">
-<div class="metadata-value listing-contact">
-Kourtney
-</div>
-<div class="metadata-value listing-filename">
-acoustic_glider.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-categories="U09TJTJDYWN0aXZlJTJDZ2xpZGVycw==" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
-<div class="thumbnail"><a href="./sos/env_glider.html" class="no-external">
-
-<img loading="lazy" src="./sos/images/env_glider.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sos/env_glider.html" class="no-external">Environmental Glider</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2xpZGVycw=='); return false;">gliders</div>
-
-</div>
-<div class="delink listing-description"><a href="./sos/env_glider.html" class="no-external">
-<p>Placeholder for Environmental Glider Data description</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./sos/env_glider.html" class="no-external">
-<div class="metadata-value listing-contact">
-Kourtney
-</div>
-<div class="metadata-value listing-filename">
-env_glider.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-categories="U09TJTJDYWN0aXZlJTJDZ2xpZGVycw==" data-listing-file-modified-sort="1790618053404" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
-<div class="thumbnail"><a href="./sos/optic_glider.html" class="no-external">
-
-<img loading="lazy" src="./sos/images/shadowgraph.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sos/optic_glider.html" class="no-external">Optical Glider Data</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2xpZGVycw=='); return false;">gliders</div>
-
-</div>
-<div class="delink listing-description"><a href="./sos/optic_glider.html" class="no-external">
-<p>Shadowgraph images</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./sos/optic_glider.html" class="no-external">
-<div class="metadata-value listing-contact">
-Kourtney
-</div>
-<div class="metadata-value listing-filename">
-optic_glider.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="16" data-categories="U09TJTJDYWN0aXZlJTJDbW9vcmluZ3M=" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-<div class="thumbnail"><a href="./sos/acoustic_mooring.html" class="no-external">
-
-<img loading="lazy" src="./sos/images/acoustic_mooring.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sos/acoustic_mooring.html" class="no-external">Active Acoustic Mooring</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9vcmluZ3M='); return false;">moorings</div>
-
-</div>
-<div class="delink listing-description"><a href="./sos/acoustic_mooring.html" class="no-external">
-<p>Mooring data - active acoustics</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./sos/acoustic_mooring.html" class="no-external">
-<div class="metadata-value listing-contact">
-Kourtney
-</div>
-<div class="metadata-value listing-filename">
-acoustic_mooring.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="17" data-categories="U09TJTJDYWN0aXZlJTJDbW9vcmluZ3M=" data-listing-file-modified-sort="1790618053389" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
-<div class="thumbnail"><a href="./sos/env_mooring.html" class="no-external">
-
-<img loading="lazy" src="./sos/images/env_mooring.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sos/env_mooring.html" class="no-external">Environmental Mooring</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09T'); return false;">SOS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWN0aXZl'); return false;">active</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9vcmluZ3M='); return false;">moorings</div>
-
-</div>
-<div class="delink listing-description"><a href="./sos/env_mooring.html" class="no-external">
-<p>Mooring data - environmental</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./sos/env_mooring.html" class="no-external">
-<div class="metadata-value listing-contact">
-Kourtney
-</div>
-<div class="metadata-value listing-filename">
-env_mooring.qmd
-</div>
-<div class="metadata-value listing-file-modified">
-9/28/26, 5:54:13 PM
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>placeholder</p>
 </div>
 </div>
 </div>
@@ -2131,7 +972,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/lmdewitt\.github\.io\/ESD-data\/");
+        var filterRegex = new RegExp("https:\/\/lmdewitt\.github\.io\/NEAP-Collaborators\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -2465,6 +1306,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./all_categories.html" class="pagination-link" aria-label="All Tags">
+        <span class="nav-page-text">All Tags</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Placeholder for seafloor imagery description">
 
-<title>Seafloor imagery</title>
+<title>NOAA National Ecosystem Assessment Program</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -30,27 +29,30 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-543b20bdd6ca10fbf90a8d04f4ac7b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-6f038197332d97742803c1eecd8f8859.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-543b20bdd6ca10fbf90a8d04f4ac7b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./index.html" rel="prev">
+<link href="./images/favicon.ico" rel="icon">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-543b20bdd6ca10fbf90a8d04f4ac7b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-6f038197332d97742803c1eecd8f8859.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-543b20bdd6ca10fbf90a8d04f4ac7b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,9 +80,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-allTags .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../style.css">
+    const options = {
+      valueNames: ['listing-Name','listing-Organization','listing-email','listing-Region','listing-Expertise','listing-Skills','listing-Products',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-Name","listing-Organization","listing-email","listing-Products","listing-Expertise","listing-Skills","listing-categories","listing-Region"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-allTags'] = new List('listing-allTags', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -252,12 +312,12 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/logos/ESD_meatball.png" alt="" class="navbar-logo light-content">
-    <img src="../images/logos/ESD_meatball.png" alt="" class="navbar-logo dark-content">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logos/noaa_logo.png" alt="" class="navbar-logo light-content">
+    <img src="./images/logos/noaa_logo.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Ecosystem Science Division Data Inventory</span>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">NEAP Collaborators</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -267,21 +327,21 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources.html"> 
+    <a class="nav-link" href="./resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/lmdewitt/ESD-data" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://github.com/lmdewitt/NEAP-Collaborators" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -291,25 +351,25 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Seafloor imagery</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Collaborators Tags Tests</a></li><li class="breadcrumb-item"><a href="./all_categories.html">All Tags</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
- <span class="menu-text"><b>Quick Links</b></span>
+ <span class="menu-text"><b>NEAP Links</b></span>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">InPort Links</span></a>
+ <span class="menu-text">Collaborators Tags Tests</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -317,14 +377,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://www.fisheries.noaa.gov/inport/item/10759" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AMLR</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">By Topical Expertise</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://www.fisheries.noaa.gov/inport/q?keywords=CalCOFI%7EFRD&amp;orgId=1060&amp;itemTypeAll=on" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CalCOFI</span></a>
+  <a href="./all_categories.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">All Tags</span></a>
   </div>
 </li>
       </ul>
@@ -332,7 +392,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">ERDDAP links</span></a>
+ <span class="menu-text">General NEAP links</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -340,14 +400,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://oceanview.pfeg.noaa.gov/erddap/search/advanced.html?searchFor=erdCalCOFI" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CalCOFI</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://oceanview.pfeg.noaa.gov/erddap/tabledap/esd_amlr_visual_zooplankton.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shadowgraph</span></a>
+  <a href="https://www.integratedecosystemassessment.noaa.gov/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IEA</span></a>
   </div>
 </li>
       </ul>
@@ -355,15 +409,47 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Repositories</span></a>
+ <span class="menu-text">NEAP/IEA Data Group Web pages</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
- <span class="menu-text">Some GitHub links</span>
+  <div class="sidebar-item-container"> 
+  <a href="https://iea-data.github.io/IEA_Data_Guidance_Doc/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NEAP/IEA Guidance Doc</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://github.com/IEA-Data/Discussion_Board/discussions" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IEA-Data Discussion Board</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://docs.google.com/document/d/1XBplEGRCfYjrGG4Ch3V_8l4xiJ7C1eFB03vimfslNS8/edit?tab=t.0#heading=h.lel32f7gy7db" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY25-28 IEA Data Working Group Strategic Plan</span></a>
+  </div>
+</li>
+      </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Repositories</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="http://www.github.com/IEA-Data" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NEAP/IEA Data Working Group</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -371,35 +457,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Tags</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="YXBwbGUlMjBwaWU=">apple pie</div><div class="category" data-category="YmFraW5n">baking</div><div class="category" data-category="YnJlYWQ=">bread</div><div class="category" data-category="Y2FuZGxlcw==">candles</div><div class="category" data-category="Y2Fycm90cw==">carrots</div><div class="category" data-category="Y2F0JTIwdG95cw==">cat toys</div><div class="category" data-category="Y2hlZXNlY2FrZQ==">cheesecake</div><div class="category" data-category="Q29tbXVuaWNhdGlvbg==">Communication</div><div class="category" data-category="Q29uc3RydWN0aW9u">Construction</div><div class="category" data-category="Q29va2luZw==">Cooking</div><div class="category" data-category="ZGVoeWRyYXRpbmc=">dehydrating</div><div class="category" data-category="ZGVzaWduJTIwc21hbGwlMjBidWlsZGluZw==">design small building</div><div class="category" data-category="ZG9nJTIwaG91c2Vz">dog houses</div><div class="category" data-category="ZG9nJTIwd2hpc3BlcmVy">dog whisperer</div><div class="category" data-category="ZG9nLXdhbGtpbmclMjBzZXJ2aWNl">dog-walking service</div><div class="category" data-category="ZHJpZWQlMjBmcnVpdA==">dried fruit</div><div class="category" data-category="ZnJhZ3JhbmNlJTIwYmxlbmRpbmc=">fragrance blending</div><div class="category" data-category="R2FyZGVuaW5n">Gardening</div><div class="category" data-category="aGFydmVzdGluZw==">harvesting</div><div class="category" data-category="aGVhcmRpbmclMjBjYXRz">hearding cats</div><div class="category" data-category="SG9tZSUyMENyYWZ0aW5n">Home Crafting</div><div class="category" data-category="aG9tZW1hZGUlMjBkb2clMjBiaXNjdWl0cw==">homemade dog biscuits</div><div class="category" data-category="amFt">jam</div><div class="category" data-category="amFtLW1ha2luZw==">jam-making</div><div class="category" data-category="amVya2V5">jerkey</div><div class="category" data-category="bGV0dHVjZQ==">lettuce</div><div class="category" data-category="bWFjaGluZSUyMHNld2luZw==">machine sewing</div><div class="category" data-category="bmV3c2xldHRlcnM=">newsletters</div><div class="category" data-category="cGFpbnRpbmc=">painting</div><div class="category" data-category="cGV0JTIwYmxhbmtldHM=">pet blankets</div><div class="category" data-category="UGV0cw==">Pets</div><div class="category" data-category="cGxhbnRpbmc=">planting</div><div class="category" data-category="cGxheSUyMGhvdXNlcw==">play houses</div><div class="category" data-category="cG93ZXIlMjB0b29scw==">power tools</div><div class="category" data-category="cHJlc2VydmluZyUyMGZvb2Q=">preserving food</div><div class="category" data-category="U2V3aW5n">Sewing</div><div class="category" data-category="c25hcCUyMHBlYXM=">snap peas</div><div class="category" data-category="c3Byb3V0aW5nJTIwc2VlZHM=">sprouting seeds</div><div class="category" data-category="c3RyYXdiZXJyaWVz">strawberries</div><div class="category" data-category="d2F4JTIwbW9sZGluZw==">wax molding</div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
-<div class="back-nav" style="margin-top: 20px; margin-bottom: -10px;">
-  <a href="../index.html" style="text-decoration: none; color: #555;">
-    ← Back to ESD Data menu
-  </a>
-</div><br>
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Collaborators Tags Tests</a></li><li class="breadcrumb-item"><a href="./all_categories.html">All Tags</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Seafloor imagery</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">AMLR</div>
-    <div class="quarto-category">static</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    Placeholder for seafloor imagery description
-  </div>
+<h1 class="title">NOAA National Ecosystem Assessment Program</h1>
+<p class="subtitle lead">NEAP Collaborators by All Tags</p>
 </div>
 
 
-<div class="quarto-title-meta">
+
+<div class="quarto-title-meta column-body">
 
     
   
@@ -411,11 +484,408 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Shared Drives</p>
+<div class="tabset-margin-container"></div><div id="data-tabset" class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Table</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">List</a></li></ul>
+<div id="data-tabset" class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="listing-allTags" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-allTags-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-allTags'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-Name" data-direction="asc">
+        Name
+      </option>
+      <option value="listing-Organization" data-direction="asc">
+        Organization
+      </option>
+      <option value="listing-Region" data-direction="asc">
+        Neap Region
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table table-striped table-hover">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-Name" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Name</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-Organization" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Organization</a>
+</th>
+
+<th>
+email
+</th>
+
+<th>
+<a class="sort" data-sort="listing-Region" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Neap Region</a>
+</th>
+
+<th>
+Topical Expertise
+</th>
+
+<th>
+Technical Skills
+</th>
+
+<th>
+Products Worked On
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-categories="Q29tbXVuaWNhdGlvbiUyQ25ld3NsZXR0ZXJzJTJDaGVhcmRpbmclMjBjYXRz" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Corinne Burns</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/OST</span>
+</td>
+<td>
+<span class="listing-email">corinne.burns@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">&nbsp;</span>
+</td>
+<td>
+<span class="listing-Expertise">Communication</span>
+</td>
+<td>
+<span class="listing-Skills">hearding cats</span>
+</td>
+<td>
+<span class="listing-Products">newsletters</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="Q29va2luZyUyQ0dhcmRlbmluZyUyQ2FwcGxlJTIwcGllJTJDY2hlZXNlY2FrZSUyQ2Jha2luZyUyQ2RlaHlkcmF0aW5n" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Lynn deWitt</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/SWFSC</span>
+</td>
+<td>
+<span class="listing-email">lynn.dewitt@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">California Current</span>
+</td>
+<td>
+<span class="listing-Expertise">Cooking, Gardening</span>
+</td>
+<td>
+<span class="listing-Skills">baking, dehydrating</span>
+</td>
+<td>
+<span class="listing-Products">apple pie, cheesecake</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-categories="Q29va2luZyUyQ2NoZWVzZWNha2UlMkNicmVhZCUyQ2Jha2luZw==" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Brittany Troast</span>
+</td>
+<td>
+<span class="listing-Organization">OAR/AOML</span>
+</td>
+<td>
+<span class="listing-email">brittany.troast@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">Gulf of Mexico</span>
+</td>
+<td>
+<span class="listing-Expertise">Cooking</span>
+</td>
+<td>
+<span class="listing-Skills">baking</span>
+</td>
+<td>
+<span class="listing-Products">cheesecake, bread</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-categories="Q29va2luZyUyQ2plcmtleSUyQ2RyaWVkJTIwZnJ1aXQlMkNkZWh5ZHJhdGluZw==" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Will Klajbor</span>
+</td>
+<td>
+<span class="listing-Organization">OAR/AOML</span>
+</td>
+<td>
+<span class="listing-email">willem.klajbor@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">Gulf of Mexico</span>
+</td>
+<td>
+<span class="listing-Expertise">Cooking</span>
+</td>
+<td>
+<span class="listing-Skills">dehydrating</span>
+</td>
+<td>
+<span class="listing-Products">jerkey, dried fruit</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-categories="Q29va2luZyUyQ3NuYXAlMjBwZWFzJTJDc3RyYXdiZXJyaWVzJTJDamFtJTJDcHJlc2VydmluZyUyMGZvb2QlMkNqYW0tbWFraW5n" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Ryan Rykaczewski</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/SWFSC</span>
+</td>
+<td>
+<span class="listing-email">ryan.rykaczewski@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">California Current</span>
+</td>
+<td>
+<span class="listing-Expertise">Cooking</span>
+</td>
+<td>
+<span class="listing-Skills">preserving food, jam-making</span>
+</td>
+<td>
+<span class="listing-Products">snap peas, strawberries,jam</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-categories="R2FyZGVuaW5nJTJDbGV0dHVjZSUyQ2NhcnJvdHMlMkNzdHJhd2JlcnJpZXMlMkNwbGFudGluZyUyQ3Nwcm91dGluZyUyMHNlZWRzJTJDaGFydmVzdGluZw==" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Brendan Turley</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/SEFSC</span>
+</td>
+<td>
+<span class="listing-email">brendan.turley@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">Gulf of Mexico</span>
+</td>
+<td>
+<span class="listing-Expertise">Gardening</span>
+</td>
+<td>
+<span class="listing-Skills">planting, sprouting seeds, harvesting</span>
+</td>
+<td>
+<span class="listing-Products">lettuce, carrots, strawberries</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-categories="SG9tZSUyMENyYWZ0aW5nJTJDY2FuZGxlcyUyQ3dheCUyMG1vbGRpbmclMkNmcmFncmFuY2UlMjBibGVuZGluZw==" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Kimberly Hyde</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/NEFSC</span>
+</td>
+<td>
+<span class="listing-email">kimberly.hyde@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">Northeast</span>
+</td>
+<td>
+<span class="listing-Expertise">Home Crafting</span>
+</td>
+<td>
+<span class="listing-Skills">wax molding, fragrance blending</span>
+</td>
+<td>
+<span class="listing-Products">candles</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-categories="UGV0cyUyQ0NvbnN0cnVjdGlvbiUyQ2RvZyUyMGhvdXNlcyUyQ3BsYXklMjBob3VzZXMlMkNkZXNpZ24lMjBzbWFsbCUyMGJ1aWxkaW5nJTJDcGFpbnRpbmclMkNwb3dlciUyMHRvb2xz" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Greg Williams</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/NWFSC</span>
+</td>
+<td>
+<span class="listing-email">greg.williams@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">California Current</span>
+</td>
+<td>
+<span class="listing-Expertise">Pets,Construction</span>
+</td>
+<td>
+<span class="listing-Skills">design small building, painting, power tools</span>
+</td>
+<td>
+<span class="listing-Products">dog houses, play houses</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-categories="UGV0cyUyQ0Nvb2tpbmclMkNob21lbWFkZSUyMGRvZyUyMGJpc2N1aXRzJTJDYmFraW5nJTJDc3Byb3V0aW5nJTIwc2VlZHM=" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Amy Freitag</span>
+</td>
+<td>
+<span class="listing-Organization">NOS/NCCOS</span>
+</td>
+<td>
+<span class="listing-email">amy.freitag@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">&nbsp;</span>
+</td>
+<td>
+<span class="listing-Expertise">Pets, Cooking</span>
+</td>
+<td>
+<span class="listing-Skills">baking, sprouting seeds</span>
+</td>
+<td>
+<span class="listing-Products">homemade dog biscuits</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-categories="UGV0cyUyQ2RvZy13YWxraW5nJTIwc2VydmljZSUyQ2RvZyUyMHdoaXNwZXJlcg==" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Ryan Vandermeulen</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/OST</span>
+</td>
+<td>
+<span class="listing-email">ryan.vandermeulen@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">&nbsp;</span>
+</td>
+<td>
+<span class="listing-Expertise">Pets</span>
+</td>
+<td>
+<span class="listing-Skills">dog whisperer</span>
+</td>
+<td>
+<span class="listing-Products">dog-walking service</span>
+</td>
+
+</tr>
+
+<tr data-index="10" data-categories="U2V3aW5nJTJDUGV0cyUyQ0hvbWUlMjBDcmFmdGluZyUyQ3BldCUyMGJsYW5rZXRzJTJDY2F0JTIwdG95cyUyQ21hY2hpbmUlMjBzZXdpbmc=" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Carissa Gervasi</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/SEFSC</span>
+</td>
+<td>
+<span class="listing-email">carissa.gervasi@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">Gulf of Mexico</span>
+</td>
+<td>
+<span class="listing-Expertise">Sewing, Pets, Home Crafting</span>
+</td>
+<td>
+<span class="listing-Skills">machine sewing</span>
+</td>
+<td>
+<span class="listing-Products">pet blankets, cat toys</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>placeholder</p>
+</div>
+</div>
+</div>
+
 
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<!-- clear-filter.html -->
+<script type="text/javascript">
+
+document.addEventListener("DOMContentLoaded", function() {
+  const categoryList = document.querySelector(".quarto-listing-category");
+  if (categoryList) {
+    // Create an "All" link element
+    const allItem = document.createElement("div");
+    allItem.className = "category";
+    allItem.style.cursor = "pointer";
+    allItem.style.fontWeight = 600;
+    allItem.innerText = "All";
+
+    allItem.addEventListener("click", function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      
+      // 1. Trigger Quarto's engine to instantly reset the layout
+      if (typeof window.quartoListingCategory === 'function') {
+        window.quartoListingCategory(""); 
+      } else {
+        const activeCategory = categoryList.querySelector(".category.active");
+        if (activeCategory) activeCategory.click();
+      }
+      
+      // 2. Wait 10 milliseconds for Quarto to finish writing its state, 
+      // then forcefully strip the leftover hash out of the address bar
+      setTimeout(function() {
+        const cleanUrl = window.location.origin + window.location.pathname + window.location.search;
+        window.history.replaceState(null, document.title, cleanUrl);
+      }, 10);
+    });
+    
+    categoryList.insertBefore(allItem, categoryList.firstChild);
+  }
+});
+
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -502,7 +972,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/lmdewitt\.github\.io\/ESD-data\/");
+        var filterRegex = new RegExp("https:\/\/lmdewitt\.github\.io\/NEAP-Collaborators\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -836,6 +1306,15 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="By Topical Expertise">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">By Topical Expertise</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -880,7 +1359,7 @@ ul.task-list li input[type="checkbox"] {
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
     <a class="nav-link" href="https://www.commerce.gov/">
-<p><img src="../images/logos/doc_logo_black.gif" style="height: 50px; width: auto;"></p>
+<p><img src="./images/logos/doc_logo_black.gif" style="height: 50px; width: auto;"></p>
 </a>
   </li>  
 </ul>
