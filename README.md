@@ -17,8 +17,8 @@ For now, dummy values are from [this document](https://docs.google.com/spreadshe
 ### This page shows multiple ways we could organize the page.
 
 * By Technical Expertise (right sidebar)
-  + Tags are Technical Expertise and other filtering is done by using the search box or sort features.
+  + Tags are Technical Expertise and other filtering is done by using the search/Filter box or Order-by features.
   + Since the table is in view, the search box can easily be used to filter by interests (eg try "baking" or "California")
-  + Note that by using the "Filter" dropdown, you can also sort in ascending or descending order
+  + Note that by using the "Order By" dropdown, you can also sort a column in ascending or descending order
 
 * By Multiple columns: Any number of column values can be combined into a set of tags in the right sidebar

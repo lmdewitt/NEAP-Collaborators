@@ -49,23 +49,23 @@ website:
       - text: "Resources"
         href: resources.qmd
   sidebar:
-    title: "NEAP Links"
+    title: "NEAP Links:"
     id: main-docs
     style: "docked"
     collapse-level: 2
     contents:
-      - text: "<b>NEAP Links</b>"
-      - section: "Collaborators Tags Tests"
+      - text: "<i>NEAP Links</i>"
+      - section: "<b>Collaborators Tags Tests</b>"
         contents:
           - text: "By Topical Expertise"
             href: index.qmd
           - text: "All Tags"
             href: all_categories.qmd
-      - section: "General NEAP links"
+      - section: "<b>General NEAP links</b>"
         contents:
           - text: "IEA"
             href: https://www.integratedecosystemassessment.noaa.gov/
-      - section: "NEAP/IEA Data Group Web pages"
+      - section: "<b>NEAP/IEA Data Group Web pages</b>"
         contents:
           - text: "NEAP/IEA Guidance Doc"
             href: https://iea-data.github.io/IEA_Data_Guidance_Doc/
@@ -73,7 +73,7 @@ website:
             href: https://github.com/IEA-Data/Discussion_Board/discussions
           - text: FY25-28 IEA Data Working Group Strategic Plan
             href: https://docs.google.com/document/d/1XBplEGRCfYjrGG4Ch3V_8l4xiJ7C1eFB03vimfslNS8/edit?tab=t.0#heading=h.lel32f7gy7db
-      - section: "Repositories"
+      - section: "<b>Repositories</b>"
         contents:
           - text: "NEAP/IEA Data Working Group"
             href: http://www.github.com/IEA-Data
@@ -82,7 +82,6 @@ format:
     backgroundcolor: "#fdfdfd"
     theme:
       light: [cosmo, theme.scss] 
-      dark: [cosmo, theme-dark.scss]
     css: style.css
     code-copy: true
     code-overflow: wrap

@@ -5,8 +5,6 @@ sidebar: main-docs
 page-layout: full
 format:
   html:
-    toc: true
-    toc-depth: 5
     grid:
       body-width: 1200px
 listing:
@@ -14,9 +12,9 @@ listing:
     type: table
     table-hover: true
     table-striped: true
-    categories: unnumbered
+    categories: numbered
     page-size: 32
-    sort: "categories"
+    sort: "Name"
     sort-ui: [Name,Organization,Region]
     field-display-names:
       Region: "Neap Region"
@@ -30,22 +28,12 @@ listing:
 language:
   en:
     listing-page-field-categories: "Topical Expertise" # Changes the sidebar & column header text
-    listing-page-category-all: "All Expertise"  # Optional: Changes the "All" button text
-include-after-body: clear-filter.html
+    listing-page-category-all: "All Collaborators"  # Optional: Changes the "All" button text
 ---
 
-::: {#data-tabset .panel-tabset}
-
-
-## Table
 
 :::: {#bytable}
 
 ::::
 
-## List
-
-placeholder
-
-:::
 

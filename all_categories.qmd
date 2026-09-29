@@ -5,8 +5,6 @@ sidebar: main-docs
 page-layout: full
 format:
   html:
-    toc: true
-    toc-depth: 5
     grid:
       body-width: 1200px
 listing:
@@ -14,15 +12,14 @@ listing:
     type: table
     table-hover: true
     table-striped: true
-    categories: unnumbered
+    categories: numbered
     page-size: 32
-    sort: "categories"
+    sort: "Name"
     sort-ui: [Name,Organization,Region]
     field-display-names:
       Region: "Neap Region"
       Skills: "Technical Skills"
       Expertise: "Topical Expertise"
-      categories: "Tags"
       Products: "Products Worked On"
     filter-ui: true
     fields: [Name,Organization,email,Region,Expertise,Skills,Products]
@@ -30,23 +27,12 @@ listing:
       - collaborators_all_cat.yml
 language:
   en:
-    listing-page-field-categories: "Tags" # Changes the sidebar & column header text
-    listing-page-category-all: "All Tags"  # Optional: Changes the "All" button text
-include-after-body: clear-filter.html
+    listing-page-field-categories: "Expertise, Skills, and Products" # Changes the sidebar & column header text
+    listing-page-category-all: "All Collaborators"  # Optional: Changes the "All" button text
 ---
 
-::: {#data-tabset .panel-tabset}
-
-
-## Table
 
 :::: {#allTags}
 
 ::::
-
-## List
-
-placeholder
-
-:::
 
