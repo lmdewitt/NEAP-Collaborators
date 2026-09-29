@@ -1,5 +1,6 @@
 ---
-title: "Ecosystem Science Division Groups"
+title: "NOAA National Ecosystem Assessment Program"
+subtitle: "About NEAP Collaborators"
 sidebar: main-docs
 page-layout: full
 format:
@@ -8,18 +9,8 @@ format:
     toc-depth: 5
     grid:
       body-width: 1200px
-listing:
-  - id: bygrid
-    type: grid
-    grid-columns: 4
-    grid-item-align: center
-    categories: false
-    page-size: 32
-    filter-ui: true
-    fields: [image,title,description,categories]
-    contents:
-      - "amlr/amlr.qmd"
-      - "sos/sos.qmd"
-      - "calcofi/calcofi.qmd"
-      - "ce/ce.qmd"
 ---
+
+## About
+
+Is there anything we want on an "About" page?

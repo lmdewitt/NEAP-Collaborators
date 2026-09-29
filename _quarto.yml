@@ -29,15 +29,15 @@ website:
       - text: "<img src='/images/logos/doc_logo_black.gif' style='height: 50px; width: auto;'/>"
         href: https://www.commerce.gov/
   navbar:
-    title: "Ecosystem Science Division Data Inventory"
+    title: "NEAP Collaborators"
     background: $navbar-bg
-    logo: "images/logos/ESD_meatball.png"
+    logo: "images/logos/noaa_logo.png"
     favicon: images/favicon.ico
     pinned: true
     align: center
     tools: 
       - icon: github
-        href: https://github.com/lmdewitt/ESD-data
+        href: https://github.com/lmdewitt/NEAP-Collaborators
 
     style: "docked"
     search: true
@@ -49,27 +49,34 @@ website:
       - text: "Resources"
         href: resources.qmd
   sidebar:
-    title: "ESD Data Links"
+    title: "NEAP Links"
     id: main-docs
     style: "docked"
     collapse-level: 2
     contents:
-      - text: "<b>Quick Links</b>"
-      - section: "InPort Links"
+      - text: "<b>NEAP Links</b>"
+      - section: "Collaborators Tags Tests"
         contents:
-          - text: "AMLR"
-            href: https://www.fisheries.noaa.gov/inport/item/10759
-          - text: "CalCOFI"
-            href: https://www.fisheries.noaa.gov/inport/q?keywords=CalCOFI%7EFRD&orgId=1060&itemTypeAll=on
-      - section: "ERDDAP links"
+          - text: "By Topical Expertise"
+            href: index.qmd
+          - text: "All Tags"
+            href: all_categories.qmd
+      - section: "General NEAP links"
         contents:
-          - text: "CalCOFI"
-            href: https://oceanview.pfeg.noaa.gov/erddap/search/advanced.html?searchFor=erdCalCOFI
-          - text: "Shadowgraph"
-            href: https://oceanview.pfeg.noaa.gov/erddap/tabledap/esd_amlr_visual_zooplankton.html
+          - text: "IEA"
+            href: https://www.integratedecosystemassessment.noaa.gov/
+      - section: "NEAP/IEA Data Group Web pages"
+        contents:
+          - text: "NEAP/IEA Guidance Doc"
+            href: https://iea-data.github.io/IEA_Data_Guidance_Doc/
+          - text: IEA-Data Discussion Board
+            href: https://github.com/IEA-Data/Discussion_Board/discussions
+          - text: FY25-28 IEA Data Working Group Strategic Plan
+            href: https://docs.google.com/document/d/1XBplEGRCfYjrGG4Ch3V_8l4xiJ7C1eFB03vimfslNS8/edit?tab=t.0#heading=h.lel32f7gy7db
       - section: "Repositories"
         contents:
-          - text: "Some GitHub links"
+          - text: "NEAP/IEA Data Working Group"
+            href: http://www.github.com/IEA-Data
 format:
   html:
     backgroundcolor: "#fdfdfd"

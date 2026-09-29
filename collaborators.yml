@@ -1,0 +1,90 @@
+- Name: Corinne Burns
+  Organization: NMFS/OST
+  email: corinne.burns@noaa.gov
+  Products: newsletters
+  Skills: hearding cats
+  categories:
+  - Communication
+- Name: Lynn deWitt
+  Organization: NMFS/SWFSC
+  email: lynn.dewitt@noaa.gov
+  Region: California Current
+  Products: apple pie, cheesecake
+  Skills: baking, dehydrating
+  categories:
+  - Cooking
+  - Gardening
+- Name: Amy Freitag
+  Organization: NOS/NCCOS
+  email: amy.freitag@noaa.gov
+  Products: homemade dog biscuits
+  Skills: baking, sprouting seeds
+  categories:
+  - Pets
+  - Cooking
+- Name: Carissa Gervasi
+  Organization: NMFS/SEFSC
+  email: carissa.gervasi@noaa.gov
+  Region: Gulf of Mexico
+  Products: pet blankets, cat toys
+  Skills: machine sewing
+  categories:
+  - Sewing
+  - Pets
+  - Home Crafting
+- Name: Kimberly Hyde
+  Organization: NMFS/NEFSC
+  email: kimberly.hyde@noaa.gov
+  Region: Northeast
+  Products: candles
+  Skills: wax molding, fragrance blending
+  categories:
+  - Home Crafting
+- Name: Will Klajbor
+  Organization: OAR/AOML
+  email: willem.klajbor@noaa.gov
+  Region: Gulf of Mexico
+  Products: jerkey, dried fruit
+  Skills: dehydrating
+  categories:
+  - Cooking
+- Name: Brittany Troast
+  Organization: OAR/AOML
+  email: brittany.troast@noaa.gov
+  Region: Gulf of Mexico
+  Products: cheesecake, bread
+  Skills: baking
+  categories:
+  - Cooking
+- Name: Brendan Turley
+  Organization: NMFS/SEFSC
+  email: brendan.turley@noaa.gov
+  Region: Gulf of Mexico
+  Products: lettuce, carrots, strawberries
+  Skills: planting, sprouting seeds, harvesting
+  categories:
+  - Gardening
+- Name: Ryan Vandermeulen
+  Organization: NMFS/OST
+  email: ryan.vandermeulen@noaa.gov
+  Products: dog-walking service
+  Skills: dog whisperer
+  categories:
+  - Pets
+- Name: Ryan Rykaczewski
+  Organization: NMFS/SWFSC
+  email: ryan.rykaczewski@noaa.gov
+  Region: California Current
+  Products: snap peas, strawberries,jam
+  Skills: preserving food, jam-making
+  categories:
+  - Cooking
+- Name: Greg Williams
+  Organization: NMFS/NWFSC
+  email: greg.williams@noaa.gov
+  Region: California Current
+  Products: dog houses, play houses
+  Skills: design small building, painting, power tools
+  categories:
+  - Pets
+  - Construction
