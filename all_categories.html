@@ -45,14 +45,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-543b20bdd6ca10fbf90a8d04f4ac7b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-6f038197332d97742803c1eecd8f8859.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-543b20bdd6ca10fbf90a8d04f4ac7b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-543b20bdd6ca10fbf90a8d04f4ac7b7c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -143,169 +139,7 @@ window.Quarto = {
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -342,7 +176,6 @@ window.Quarto = {
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
     <a href="https://github.com/lmdewitt/NEAP-Collaborators" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -351,7 +184,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Collaborators Tags Tests</a></li><li class="breadcrumb-item"><a href="./all_categories.html">All Tags</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><b>Collaborators Tags Tests</b></a></li><li class="breadcrumb-item"><a href="./all_categories.html">All Tags</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -364,12 +197,12 @@ window.Quarto = {
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
- <span class="menu-text"><b>NEAP Links</b></span>
+ <span class="menu-text"><i>NEAP Links</i></span>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Collaborators Tags Tests</span></a>
+ <span class="menu-text"><b>Collaborators Tags Tests</b></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -392,7 +225,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">General NEAP links</span></a>
+ <span class="menu-text"><b>General NEAP links</b></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -409,7 +242,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">NEAP/IEA Data Group Web pages</span></a>
+ <span class="menu-text"><b>NEAP/IEA Data Group Web pages</b></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -438,7 +271,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Repositories</span></a>
+ <span class="menu-text"><b>Repositories</b></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -459,12 +292,11 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Tags</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="YXBwbGUlMjBwaWU=">apple pie</div><div class="category" data-category="YmFraW5n">baking</div><div class="category" data-category="YnJlYWQ=">bread</div><div class="category" data-category="Y2FuZGxlcw==">candles</div><div class="category" data-category="Y2Fycm90cw==">carrots</div><div class="category" data-category="Y2F0JTIwdG95cw==">cat toys</div><div class="category" data-category="Y2hlZXNlY2FrZQ==">cheesecake</div><div class="category" data-category="Q29tbXVuaWNhdGlvbg==">Communication</div><div class="category" data-category="Q29uc3RydWN0aW9u">Construction</div><div class="category" data-category="Q29va2luZw==">Cooking</div><div class="category" data-category="ZGVoeWRyYXRpbmc=">dehydrating</div><div class="category" data-category="ZGVzaWduJTIwc21hbGwlMjBidWlsZGluZw==">design small building</div><div class="category" data-category="ZG9nJTIwaG91c2Vz">dog houses</div><div class="category" data-category="ZG9nJTIwd2hpc3BlcmVy">dog whisperer</div><div class="category" data-category="ZG9nLXdhbGtpbmclMjBzZXJ2aWNl">dog-walking service</div><div class="category" data-category="ZHJpZWQlMjBmcnVpdA==">dried fruit</div><div class="category" data-category="ZnJhZ3JhbmNlJTIwYmxlbmRpbmc=">fragrance blending</div><div class="category" data-category="R2FyZGVuaW5n">Gardening</div><div class="category" data-category="aGFydmVzdGluZw==">harvesting</div><div class="category" data-category="aGVhcmRpbmclMjBjYXRz">hearding cats</div><div class="category" data-category="SG9tZSUyMENyYWZ0aW5n">Home Crafting</div><div class="category" data-category="aG9tZW1hZGUlMjBkb2clMjBiaXNjdWl0cw==">homemade dog biscuits</div><div class="category" data-category="amFt">jam</div><div class="category" data-category="amFtLW1ha2luZw==">jam-making</div><div class="category" data-category="amVya2V5">jerkey</div><div class="category" data-category="bGV0dHVjZQ==">lettuce</div><div class="category" data-category="bWFjaGluZSUyMHNld2luZw==">machine sewing</div><div class="category" data-category="bmV3c2xldHRlcnM=">newsletters</div><div class="category" data-category="cGFpbnRpbmc=">painting</div><div class="category" data-category="cGV0JTIwYmxhbmtldHM=">pet blankets</div><div class="category" data-category="UGV0cw==">Pets</div><div class="category" data-category="cGxhbnRpbmc=">planting</div><div class="category" data-category="cGxheSUyMGhvdXNlcw==">play houses</div><div class="category" data-category="cG93ZXIlMjB0b29scw==">power tools</div><div class="category" data-category="cHJlc2VydmluZyUyMGZvb2Q=">preserving food</div><div class="category" data-category="U2V3aW5n">Sewing</div><div class="category" data-category="c25hcCUyMHBlYXM=">snap peas</div><div class="category" data-category="c3Byb3V0aW5nJTIwc2VlZHM=">sprouting seeds</div><div class="category" data-category="c3RyYXdiZXJyaWVz">strawberries</div><div class="category" data-category="d2F4JTIwbW9sZGluZw==">wax molding</div></div></div>
+    <h5 class="quarto-listing-category-title">Expertise, Skills, and Products</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All Collaborators <span class="quarto-category-count">(11)</span></div><div class="category" data-category="YXBwbGUlMjBwaWU=">apple pie <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YmFraW5n">baking <span class="quarto-category-count">(3)</span></div><div class="category" data-category="YnJlYWQ=">bread <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FuZGxlcw==">candles <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2Fycm90cw==">carrots <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2F0JTIwdG95cw==">cat toys <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2hlZXNlY2FrZQ==">cheesecake <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q29tbXVuaWNhdGlvbg==">Communication <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29uc3RydWN0aW9u">Construction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29va2luZw==">Cooking <span class="quarto-category-count">(5)</span></div><div class="category" data-category="ZGVoeWRyYXRpbmc=">dehydrating <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZGVzaWduJTIwc21hbGwlMjBidWlsZGluZw==">design small building <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZG9nJTIwaG91c2Vz">dog houses <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZG9nJTIwd2hpc3BlcmVy">dog whisperer <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZG9nLXdhbGtpbmclMjBzZXJ2aWNl">dog-walking service <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZHJpZWQlMjBmcnVpdA==">dried fruit <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZnJhZ3JhbmNlJTIwYmxlbmRpbmc=">fragrance blending <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2FyZGVuaW5n">Gardening <span class="quarto-category-count">(2)</span></div><div class="category" data-category="aGFydmVzdGluZw==">harvesting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aGVhcmRpbmclMjBjYXRz">hearding cats <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SG9tZSUyMENyYWZ0aW5n">Home Crafting <span class="quarto-category-count">(2)</span></div><div class="category" data-category="aG9tZW1hZGUlMjBkb2clMjBiaXNjdWl0cw==">homemade dog biscuits <span class="quarto-category-count">(1)</span></div><div class="category" data-category="amFt">jam <span class="quarto-category-count">(1)</span></div><div class="category" data-category="amFtLW1ha2luZw==">jam-making <span class="quarto-category-count">(1)</span></div><div class="category" data-category="amVya2V5">jerkey <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bGV0dHVjZQ==">lettuce <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFjaGluZSUyMHNld2luZw==">machine sewing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3c2xldHRlcnM=">newsletters <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGFpbnRpbmc=">painting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGV0JTIwYmxhbmtldHM=">pet blankets <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGV0cw==">Pets <span class="quarto-category-count">(4)</span></div><div class="category" data-category="cGxhbnRpbmc=">planting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGxheSUyMGhvdXNlcw==">play houses <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cG93ZXIlMjB0b29scw==">power tools <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJlc2VydmluZyUyMGZvb2Q=">preserving food <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2V3aW5n">Sewing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c25hcCUyMHBlYXM=">snap peas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3Byb3V0aW5nJTIwc2VlZHM=">sprouting seeds <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c3RyYXdiZXJyaWVz">strawberries <span class="quarto-category-count">(2)</span></div><div class="category" data-category="d2F4JTIwbW9sZGluZw==">wax molding <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Collaborators Tags Tests</a></li><li class="breadcrumb-item"><a href="./all_categories.html">All Tags</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><b>Collaborators Tags Tests</b></a></li><li class="breadcrumb-item"><a href="./all_categories.html">All Tags</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">NOAA National Ecosystem Assessment Program</h1>
 <p class="subtitle lead">NEAP Collaborators by All Tags</p>
@@ -484,10 +316,6 @@ window.Quarto = {
 </header>
 
 
-<div class="tabset-margin-container"></div><div id="data-tabset" class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Table</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">List</a></li></ul>
-<div id="data-tabset" class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="listing-allTags" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
@@ -547,54 +375,54 @@ Products Worked On
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="Q29tbXVuaWNhdGlvbiUyQ25ld3NsZXR0ZXJzJTJDaGVhcmRpbmclMjBjYXRz" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-categories="UGV0cyUyQ0Nvb2tpbmclMkNob21lbWFkZSUyMGRvZyUyMGJpc2N1aXRzJTJDYmFraW5nJTJDc3Byb3V0aW5nJTIwc2VlZHM=" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-Name">Corinne Burns</span>
+<span class="listing-Name">Amy Freitag</span>
 </td>
 <td>
-<span class="listing-Organization">NMFS/OST</span>
+<span class="listing-Organization">NOS/NCCOS</span>
 </td>
 <td>
-<span class="listing-email">corinne.burns@noaa.gov</span>
+<span class="listing-email">amy.freitag@noaa.gov</span>
 </td>
 <td>
 <span class="listing-Region">&nbsp;</span>
 </td>
 <td>
-<span class="listing-Expertise">Communication</span>
+<span class="listing-Expertise">Pets, Cooking</span>
 </td>
 <td>
-<span class="listing-Skills">hearding cats</span>
+<span class="listing-Skills">baking, sprouting seeds</span>
 </td>
 <td>
-<span class="listing-Products">newsletters</span>
+<span class="listing-Products">homemade dog biscuits</span>
 </td>
 
 </tr>
 
-<tr data-index="1" data-categories="Q29va2luZyUyQ0dhcmRlbmluZyUyQ2FwcGxlJTIwcGllJTJDY2hlZXNlY2FrZSUyQ2Jha2luZyUyQ2RlaHlkcmF0aW5n" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-categories="R2FyZGVuaW5nJTJDbGV0dHVjZSUyQ2NhcnJvdHMlMkNzdHJhd2JlcnJpZXMlMkNwbGFudGluZyUyQ3Nwcm91dGluZyUyMHNlZWRzJTJDaGFydmVzdGluZw==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-Name">Lynn deWitt</span>
+<span class="listing-Name">Brendan Turley</span>
 </td>
 <td>
-<span class="listing-Organization">NMFS/SWFSC</span>
+<span class="listing-Organization">NMFS/SEFSC</span>
 </td>
 <td>
-<span class="listing-email">lynn.dewitt@noaa.gov</span>
+<span class="listing-email">brendan.turley@noaa.gov</span>
 </td>
 <td>
-<span class="listing-Region">California Current</span>
+<span class="listing-Region">Gulf of Mexico</span>
 </td>
 <td>
-<span class="listing-Expertise">Cooking, Gardening</span>
+<span class="listing-Expertise">Gardening</span>
 </td>
 <td>
-<span class="listing-Skills">baking, dehydrating</span>
+<span class="listing-Skills">planting, sprouting seeds, harvesting</span>
 </td>
 <td>
-<span class="listing-Products">apple pie, cheesecake</span>
+<span class="listing-Products">lettuce, carrots, strawberries</span>
 </td>
 
 </tr>
@@ -625,80 +453,80 @@ Products Worked On
 
 </tr>
 
-<tr data-index="3" data-categories="Q29va2luZyUyQ2plcmtleSUyQ2RyaWVkJTIwZnJ1aXQlMkNkZWh5ZHJhdGluZw==" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="3" data-categories="U2V3aW5nJTJDUGV0cyUyQ0hvbWUlMjBDcmFmdGluZyUyQ3BldCUyMGJsYW5rZXRzJTJDY2F0JTIwdG95cyUyQ21hY2hpbmUlMjBzZXdpbmc=" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-Name">Will Klajbor</span>
-</td>
-<td>
-<span class="listing-Organization">OAR/AOML</span>
-</td>
-<td>
-<span class="listing-email">willem.klajbor@noaa.gov</span>
-</td>
-<td>
-<span class="listing-Region">Gulf of Mexico</span>
-</td>
-<td>
-<span class="listing-Expertise">Cooking</span>
-</td>
-<td>
-<span class="listing-Skills">dehydrating</span>
-</td>
-<td>
-<span class="listing-Products">jerkey, dried fruit</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-categories="Q29va2luZyUyQ3NuYXAlMjBwZWFzJTJDc3RyYXdiZXJyaWVzJTJDamFtJTJDcHJlc2VydmluZyUyMGZvb2QlMkNqYW0tbWFraW5n" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-Name">Ryan Rykaczewski</span>
-</td>
-<td>
-<span class="listing-Organization">NMFS/SWFSC</span>
-</td>
-<td>
-<span class="listing-email">ryan.rykaczewski@noaa.gov</span>
-</td>
-<td>
-<span class="listing-Region">California Current</span>
-</td>
-<td>
-<span class="listing-Expertise">Cooking</span>
-</td>
-<td>
-<span class="listing-Skills">preserving food, jam-making</span>
-</td>
-<td>
-<span class="listing-Products">snap peas, strawberries,jam</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-categories="R2FyZGVuaW5nJTJDbGV0dHVjZSUyQ2NhcnJvdHMlMkNzdHJhd2JlcnJpZXMlMkNwbGFudGluZyUyQ3Nwcm91dGluZyUyMHNlZWRzJTJDaGFydmVzdGluZw==" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-Name">Brendan Turley</span>
+<span class="listing-Name">Carissa Gervasi</span>
 </td>
 <td>
 <span class="listing-Organization">NMFS/SEFSC</span>
 </td>
 <td>
-<span class="listing-email">brendan.turley@noaa.gov</span>
+<span class="listing-email">carissa.gervasi@noaa.gov</span>
 </td>
 <td>
 <span class="listing-Region">Gulf of Mexico</span>
 </td>
 <td>
-<span class="listing-Expertise">Gardening</span>
+<span class="listing-Expertise">Sewing, Pets, Home Crafting</span>
 </td>
 <td>
-<span class="listing-Skills">planting, sprouting seeds, harvesting</span>
+<span class="listing-Skills">machine sewing</span>
 </td>
 <td>
-<span class="listing-Products">lettuce, carrots, strawberries</span>
+<span class="listing-Products">pet blankets, cat toys</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-categories="Q29tbXVuaWNhdGlvbiUyQ25ld3NsZXR0ZXJzJTJDaGVhcmRpbmclMjBjYXRz" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Corinne Burns</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/OST</span>
+</td>
+<td>
+<span class="listing-email">corinne.burns@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">&nbsp;</span>
+</td>
+<td>
+<span class="listing-Expertise">Communication</span>
+</td>
+<td>
+<span class="listing-Skills">hearding cats</span>
+</td>
+<td>
+<span class="listing-Products">newsletters</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-categories="UGV0cyUyQ0NvbnN0cnVjdGlvbiUyQ2RvZyUyMGhvdXNlcyUyQ3BsYXklMjBob3VzZXMlMkNkZXNpZ24lMjBzbWFsbCUyMGJ1aWxkaW5nJTJDcGFpbnRpbmclMkNwb3dlciUyMHRvb2xz" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-Name">Greg Williams</span>
+</td>
+<td>
+<span class="listing-Organization">NMFS/NWFSC</span>
+</td>
+<td>
+<span class="listing-email">greg.williams@noaa.gov</span>
+</td>
+<td>
+<span class="listing-Region">California Current</span>
+</td>
+<td>
+<span class="listing-Expertise">Pets,Construction</span>
+</td>
+<td>
+<span class="listing-Skills">design small building, painting, power tools</span>
+</td>
+<td>
+<span class="listing-Products">dog houses, play houses</span>
 </td>
 
 </tr>
@@ -729,54 +557,54 @@ Products Worked On
 
 </tr>
 
-<tr data-index="7" data-categories="UGV0cyUyQ0NvbnN0cnVjdGlvbiUyQ2RvZyUyMGhvdXNlcyUyQ3BsYXklMjBob3VzZXMlMkNkZXNpZ24lMjBzbWFsbCUyMGJ1aWxkaW5nJTJDcGFpbnRpbmclMkNwb3dlciUyMHRvb2xz" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="7" data-categories="Q29va2luZyUyQ0dhcmRlbmluZyUyQ2FwcGxlJTIwcGllJTJDY2hlZXNlY2FrZSUyQ2Jha2luZyUyQ2RlaHlkcmF0aW5n" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-Name">Greg Williams</span>
+<span class="listing-Name">Lynn deWitt</span>
 </td>
 <td>
-<span class="listing-Organization">NMFS/NWFSC</span>
+<span class="listing-Organization">NMFS/SWFSC</span>
 </td>
 <td>
-<span class="listing-email">greg.williams@noaa.gov</span>
+<span class="listing-email">lynn.dewitt@noaa.gov</span>
 </td>
 <td>
 <span class="listing-Region">California Current</span>
 </td>
 <td>
-<span class="listing-Expertise">Pets,Construction</span>
+<span class="listing-Expertise">Cooking, Gardening</span>
 </td>
 <td>
-<span class="listing-Skills">design small building, painting, power tools</span>
+<span class="listing-Skills">baking, dehydrating</span>
 </td>
 <td>
-<span class="listing-Products">dog houses, play houses</span>
+<span class="listing-Products">apple pie, cheesecake</span>
 </td>
 
 </tr>
 
-<tr data-index="8" data-categories="UGV0cyUyQ0Nvb2tpbmclMkNob21lbWFkZSUyMGRvZyUyMGJpc2N1aXRzJTJDYmFraW5nJTJDc3Byb3V0aW5nJTIwc2VlZHM=" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="8" data-categories="Q29va2luZyUyQ3NuYXAlMjBwZWFzJTJDc3RyYXdiZXJyaWVzJTJDamFtJTJDcHJlc2VydmluZyUyMGZvb2QlMkNqYW0tbWFraW5n" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-Name">Amy Freitag</span>
+<span class="listing-Name">Ryan Rykaczewski</span>
 </td>
 <td>
-<span class="listing-Organization">NOS/NCCOS</span>
+<span class="listing-Organization">NMFS/SWFSC</span>
 </td>
 <td>
-<span class="listing-email">amy.freitag@noaa.gov</span>
+<span class="listing-email">ryan.rykaczewski@noaa.gov</span>
 </td>
 <td>
-<span class="listing-Region">&nbsp;</span>
+<span class="listing-Region">California Current</span>
 </td>
 <td>
-<span class="listing-Expertise">Pets, Cooking</span>
+<span class="listing-Expertise">Cooking</span>
 </td>
 <td>
-<span class="listing-Skills">baking, sprouting seeds</span>
+<span class="listing-Skills">preserving food, jam-making</span>
 </td>
 <td>
-<span class="listing-Products">homemade dog biscuits</span>
+<span class="listing-Products">snap peas, strawberries,jam</span>
 </td>
 
 </tr>
@@ -807,28 +635,28 @@ Products Worked On
 
 </tr>
 
-<tr data-index="10" data-categories="U2V3aW5nJTJDUGV0cyUyQ0hvbWUlMjBDcmFmdGluZyUyQ3BldCUyMGJsYW5rZXRzJTJDY2F0JTIwdG95cyUyQ21hY2hpbmUlMjBzZXdpbmc=" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="10" data-categories="Q29va2luZyUyQ2plcmtleSUyQ2RyaWVkJTIwZnJ1aXQlMkNkZWh5ZHJhdGluZw==" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-Name">Carissa Gervasi</span>
+<span class="listing-Name">Will Klajbor</span>
 </td>
 <td>
-<span class="listing-Organization">NMFS/SEFSC</span>
+<span class="listing-Organization">OAR/AOML</span>
 </td>
 <td>
-<span class="listing-email">carissa.gervasi@noaa.gov</span>
+<span class="listing-email">willem.klajbor@noaa.gov</span>
 </td>
 <td>
 <span class="listing-Region">Gulf of Mexico</span>
 </td>
 <td>
-<span class="listing-Expertise">Sewing, Pets, Home Crafting</span>
+<span class="listing-Expertise">Cooking</span>
 </td>
 <td>
-<span class="listing-Skills">machine sewing</span>
+<span class="listing-Skills">dehydrating</span>
 </td>
 <td>
-<span class="listing-Products">pet blankets, cat toys</span>
+<span class="listing-Products">jerkey, dried fruit</span>
 </td>
 
 </tr>
@@ -837,70 +665,13 @@ Products Worked On
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>placeholder</p>
-</div>
-</div>
-</div>
 
 
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- clear-filter.html -->
-<script type="text/javascript">
-
-document.addEventListener("DOMContentLoaded", function() {
-  const categoryList = document.querySelector(".quarto-listing-category");
-  if (categoryList) {
-    // Create an "All" link element
-    const allItem = document.createElement("div");
-    allItem.className = "category";
-    allItem.style.cursor = "pointer";
-    allItem.style.fontWeight = 600;
-    allItem.innerText = "All";
-
-    allItem.addEventListener("click", function(event) {
-      event.preventDefault();
-      event.stopPropagation();
-      
-      // 1. Trigger Quarto's engine to instantly reset the layout
-      if (typeof window.quartoListingCategory === 'function') {
-        window.quartoListingCategory(""); 
-      } else {
-        const activeCategory = categoryList.querySelector(".category.active");
-        if (activeCategory) activeCategory.click();
-      }
-      
-      // 2. Wait 10 milliseconds for Quarto to finish writing its state, 
-      // then forcefully strip the leftover hash out of the address bar
-      setTimeout(function() {
-        const cleanUrl = window.location.origin + window.location.pathname + window.location.search;
-        window.history.replaceState(null, document.title, cleanUrl);
-      }, 10);
-    });
-    
-    categoryList.insertBefore(allItem, categoryList.firstChild);
-  }
-});
-
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
